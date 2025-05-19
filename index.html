@@ -1,129 +1,108 @@
-<!-- AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shreyash Gharat | My Digital Identity</title>
+
+  <!-- CSS Links -->
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <style>
-   /* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: Arial, sans-serif;
-}
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-/* Navbar styling */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 15px 30px;
-}
+    /* Navbar styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 15px 30px;
+    }
 
-.logo {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-}
+    .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-/* Navigation links */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
 
-.nav-links li a {
-  text-decoration: none;
-  padding: 10px 15px;
-  color: #fff;
-  background-color: #444;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
+    .nav-links li a {
+      text-decoration: none;
+      padding: 10px 15px;
+      color: #fff;
+      background-color: #444;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-/* Hover effect */
-.nav-links li a:hover {
-  background-color: #00bcd4;
-  color: #fff;
-}
+    .nav-links li a:hover {
+      background-color: #00bcd4;
+      color: #fff;
+    }
 
-   /* Animation */
-@keyframes fadeZoomIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+    /* Animation */
+    @keyframes fadeZoomIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeZoomIn 1.2s ease-in-out forwards;
-}
+    .fade-in {
+      opacity: 0;
+      animation: fadeZoomIn 1.2s ease-in-out forwards;
+    }
 
-/* Delay for smoother experience */
-.fade-in:nth-child(1) {
-  animation-delay: 0.3s;
-}
-.fade-in:nth-child(2) {
-  animation-delay: 0.6s;
-}
-.fade-in:nth-child(3) {
-  animation-delay: 0.9s;
-}
+    .fade-in:nth-child(1) { animation-delay: 0.3s; }
+    .fade-in:nth-child(2) { animation-delay: 0.6s; }
+    .fade-in:nth-child(3) { animation-delay: 0.9s; }
 
-/* Profile image styling */
-.profile-img {
-  display: block;
-  margin: 0 auto; /* centers image horizontally */
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.profile-img:hover {
-  transform: scale(1.08);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-}
-.profile-img {
-  border: 4px solid #ffffff;
-}
+    .profile-img {
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 4px solid #ffffff;
+    }
 
-
-/* Video styling */
-.intro-video {
-  width: 300px;
-  height: auto;
-  margin-top: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
+    .profile-img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    }
 
     .intro-video {
       display: block;
-      margin-top: 1em;
+      margin: 1em auto;
       max-width: 100%;
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
     footer {
@@ -134,8 +113,8 @@ body {
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <nav class="navbar">
       <div class="logo">My Identity</div>
@@ -148,59 +127,64 @@ body {
       </ul>
     </nav>
   </header>
-<section id="about" class="section" data-aos="fade-up">
 
- <section id="welcome" class="section">
-  <h1 class="fade-in">Welcome to My World!</h1>
-  <img src="profile.jpg" alt="My Photo" class="profile-img fade-in" />
-  <video controls class="intro-video fade-in">
-    <source src="intro-video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</section>
+  <section id="welcome" class="section">
+    <h1 class="fade-in">Welcome to My World!</h1>
+    <img src="profile.jpg" alt="My Photo" class="profile-img fade-in" />
+    <video controls class="intro-video fade-in">
+      <source src="intro-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section" data-aos="fade-up">
     <h2>About Me</h2>
     <p><strong>Name:</strong> Shreyash Subhash Gharat</p>
     <p><strong>Location:</strong> Saphale, Palghar, Mumbai, Maharashtra</p>
-    <p><strong>Education:</strong> 
+    <p><strong>Education:</strong><br>
       School - Sir JP International School, Palghar 401404<br>
-      College - Annasaheb Vartak College of Science, Arts, Commerce<br>
-      Degree - Pursuing B.Tech in Electronics & Computer Science at Aldel St. John College of Engineering & Management
+      College - Annasaheb Vartak College<br>
+      Degree - B.Tech in Electronics & Computer Science (Aldel St. John College of Engineering & Management)
     </p>
     <p><strong>Languages:</strong> English (Advanced), Marathi (Medium), Hindi (Medium)</p>
   </section>
 
-  <section id="achievements" class="section">
+  <section id="achievements" class="section" data-aos="fade-up">
     <h2>Achievements</h2>
     <ul>
-      <li>Completed a major project in Electronics and Computer Science: <strong>Gesture Vocalizer</strong></li>
-      <li>Participated in multiple tech competitions and hackathons</li>
-      <li>Internship experience at a tech company</li>
-      <li>Led a college team in developing a community welfare project</li>
-      <li>Represented college in an international ideathon organized by Florida University</li>
-      <li>Won 2nd position in a business presentation on the topic "Pacemaker"</li>
+      <li>Major project: <strong>Gesture Vocalizer</strong></li>
+      <li>Tech competitions & hackathons</li>
+      <li>Internship at tech company</li>
+      <li>Led college team for community project</li>
+      <li>Represented college in international ideathon (Florida University)</li>
+      <li>2nd in presentation on "Pacemaker"</li>
     </ul>
   </section>
 
-  <section id="goals" class="section">
+  <section id="goals" class="section" data-aos="fade-up">
     <h2>Future Goals</h2>
-    <p>I am currently working on real-time projects to develop skills in <strong>Generative AI</strong> and <strong>Machine Learning</strong>. I also aim to contribute to <strong>social welfare</strong> by offering cybersecurity education through free courses.</p>
+    <p>Working on real-time projects in <strong>Generative AI</strong> and <strong>Machine Learning</strong>. Aiming to provide free <strong>cybersecurity education</strong> for social good.</p>
   </section>
 
-  <section id="personal" class="section">
+  <section id="personal" class="section" data-aos="fade-up">
     <h2>Personal Side</h2>
-    <p><strong>Hobbies:</strong> Gaming (PUBG, BGMI, Valorant, chess, mind games, puzzles), singing, driving cars, riding bikes, watching Hindi movies</p>
-    <p><strong>Role Model:</strong> Coding with Harry — for providing free educational resources to help India's youth learn coding and become successful software engineers.</p>
-    <p><strong>Favorite Books:</strong> Revolution of India in Developing Technology, Modern Era of AI, Cybersecurity, Ethical Hacking</p>
-    <p><strong>Favorite Websites:</strong> YouTube, Amazon, Epic Games, Online Video Game Platforms</p>
+    <p><strong>Hobbies:</strong> Gaming (PUBG, BGMI, Valorant), chess, puzzles, singing, driving, riding, Hindi movies</p>
+    <p><strong>Role Model:</strong> Coding With Harry — for free coding education to Indian youth</p>
+    <p><strong>Favorite Books:</strong> Revolution of India in Tech, AI Era, Cybersecurity, Ethical Hacking</p>
+    <p><strong>Favorite Websites:</strong> YouTube, Amazon, Epic Games</p>
     <p><strong>Favorite Startups:</strong> NVIDIA, AMD</p>
-    <p><strong>Volunteering Experience:</strong> Developing a free educational website to teach hardware development and coding for students and beginners</p>
+    <p><strong>Volunteering:</strong> Building free website to teach hardware and coding</p>
   </section>
 
   <footer>
     <p>© 2025 Shreyash Subhash Gharat | Built with ❤️</p>
   </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <script src="script.js"></script>
 </body>
