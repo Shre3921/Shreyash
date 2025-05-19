@@ -84,17 +84,21 @@ body {
 
 /* Profile image styling */
 .profile-img {
-  align-item:center;
-  width: 20px;
-  height: auto;
+  display: block;
+  margin: 0 auto; /* centers image horizontally */
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
+  object-fit: cover;
   margin-top: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .profile-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
+
 
 /* Video styling */
 .intro-video {
