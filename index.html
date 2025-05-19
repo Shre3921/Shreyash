@@ -7,7 +7,7 @@
 
   <!-- CSS Links -->
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <style>
     /* Basic reset */
@@ -19,6 +19,8 @@
 
     body {
       font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
     }
 
     /* Navbar styling */
@@ -54,6 +56,23 @@
     .nav-links li a:hover {
       background-color: #00bcd4;
       color: #fff;
+    }
+
+    /* Section styling */
+    .section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h1,
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
     }
 
     /* Animation */
@@ -110,6 +129,11 @@
       padding: 1em;
       background-color: #333;
       color: white;
+      margin-top: 60px;
+    }
+
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
@@ -186,6 +210,7 @@
     AOS.init();
   </script>
 
+  <!-- Optional JS -->
   <script src="script.js"></script>
 </body>
 </html>
