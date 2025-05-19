@@ -6,32 +6,53 @@
   <title>Shreyash Gharat | My Digital Identity</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
+   /* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .navbar {
-      background-color: #333;
-      color: white;
-      padding: 1em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+body {
+  font-family: Arial, sans-serif;
+}
 
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 1em;
-    }
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+}
 
-    .nav-links li a {
-      color: white;
-      text-decoration: none;
-    }
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #444;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
 
     .section {
       padding: 2em;
