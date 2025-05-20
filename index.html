@@ -66,7 +66,24 @@
   <ul id="achievements-list" class="list-disc pl-5 space-y-2 text-blue-800"></ul>
 </section>
 
-  
+  <script>
+  fetch('achievements.json')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('achievements-title').textContent = data.title;
+
+      const list = document.getElementById('achievements-list');
+      data.items.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.description;
+        list.appendChild(li);
+      });
+    })
+    .catch(error => {
+      console.error('Error loading achievements:', error);
+    });
+</script>
+
 
 <!-- Future Goals -->
 <section id="goals" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
