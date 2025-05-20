@@ -85,13 +85,13 @@
 </script>
 
 
-<!-- Future Goals -->
+<!-- Future Goals 
 <section id="goals" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
   <h2 class="text-2xl font-bold text-center mb-4">🚀 Future Goals</h2>
   <p>Working on real-time projects in <strong>Generative AI</strong> and <strong>Machine Learning</strong>. Aiming to provide free <strong>cybersecurity education</strong> for social good.</p>
 </section>
 
-<!-- Personal Side -->
+<!-- Personal Side -
 <section id="personal" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
   <h2 class="text-2xl font-bold text-center mb-4">🧠 Personal Side</h2>
   <p><strong>Hobbies:</strong> Gaming (PUBG, BGMI, Valorant), chess, puzzles, singing, driving, riding, Hindi movies</p>
@@ -100,7 +100,48 @@
   <p><strong>Favorite Websites:</strong> YouTube, Amazon, Epic Games</p>
   <p><strong>Favorite Startups:</strong> NVIDIA, AMD</p>
   <p><strong>Volunteering:</strong> Building free website to teach hardware and coding</p>
+</section> -->
+<section id="goals" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
+  <h2 id="goals-title" class="text-2xl font-bold text-center mb-4"></h2>
+  <p id="goals-description"></p>
 </section>
+
+<section id="personal" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
+  <h2 id="personal-title" class="text-2xl font-bold text-center mb-4"></h2>
+  <div id="personal-details" class="space-y-2 text-gray-800"></div>
+</section>
+<script>
+// Load Future Goals
+fetch('goals.json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('goals-title').textContent = data.title;
+    document.getElementById('goals-description').textContent = data.description;
+  })
+  .catch(error => console.error('Error loading goals:', error));
+
+// Load Personal Side
+fetch('personal.json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('personal-title').textContent = data.title;
+    const container = document.getElementById('personal-details');
+
+    const addParagraph = (label, value) => {
+      const p = document.createElement('p');
+      p.innerHTML = `<strong>${label}:</strong> ${value}`;
+      container.appendChild(p);
+    };
+
+    addParagraph("Hobbies", data.details.hobbies.join(', '));
+    addParagraph("Role Model", data.details.roleModel);
+    addParagraph("Favorite Books", data.details.favoriteBooks.join(', '));
+    addParagraph("Favorite Websites", data.details.favoriteWebsites.join(', '));
+    addParagraph("Favorite Startups", data.details.favoriteStartups.join(', '));
+    addParagraph("Volunteering", data.details.volunteering);
+  })
+  .catch(error => console.error('Error loading personal section:', error));
+</script>
 
 
   <!-- Contact Section -->
