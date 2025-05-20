@@ -1,0 +1,12 @@
+{
+  "section": "personal",
+  "title": "🧠 Personal Side",
+  "details": {
+    "hobbies": ["Gaming (PUBG, BGMI, Valorant)", "chess", "puzzles", "singing", "driving", "riding", "Hindi movies"],
+    "roleModel": "Coding With Harry — for free coding education to Indian youth",
+    "favoriteBooks": ["Revolution of India in Tech", "AI Era", "Cybersecurity", "Ethical Hacking"],
+    "favoriteWebsites": ["YouTube", "Amazon", "Epic Games"],
+    "favoriteStartups": ["NVIDIA", "AMD"],
+    "volunteering": "Building free website to teach hardware and coding"
+  }
+}
