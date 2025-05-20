@@ -1,0 +1,30 @@
+{
+  "section": "achievements",
+  "title": "🏆 Achievements",
+  "items": [
+    {
+      "type": "project",
+      "description": "Major project: Gesture Vocalizer"
+    },
+    {
+      "type": "competition",
+      "description": "Tech competitions & hackathons"
+    },
+    {
+      "type": "internship",
+      "description": "Internship at tech company"
+    },
+    {
+      "type": "leadership",
+      "description": "Led college team for community project"
+    },
+    {
+      "type": "representation",
+      "description": "Represented college in international ideathon (Florida University)"
+    },
+    {
+      "type": "award",
+      "description": "2nd in presentation on \"Pacemaker\""
+    }
+  ]
+}
