@@ -20,31 +20,39 @@
 
 <body class="bg-blue-50 text-blue-900 font-sans">
 
-  <!-- Header -->
-  <header class="bg-blue-700 shadow-md p-4 text-white">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">My Identity</h1>
-      <button id="menu-btn" class="md:hidden block focus:outline-none">
-        <svg class="w-6 h-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M4 5h16M4 12h16M4 19h16" />
-        </svg>
-      </button>
-      <ul id="menu" class="hidden md:flex space-x-4 md:space-x-6">
-        <li><a href="#welcome" class="hover:underline">Welcome</a></li>
-        <li><a href="#about" class="hover:underline">About Me</a></li>
-        <li><a href="#achievements" class="hover:underline">Achievements</a></li>
-        <li><a href="#goals" class="hover:underline">Goals</a></li>
-        <li><a href="#contact" class="hover:underline">Contact</a></li>
-      </ul>
-    </div>
-    <ul id="mobile-menu" class="md:hidden hidden mt-4 space-y-2 bg-blue-600 p-4 rounded-lg">
-      <li><a href="#welcome" class="block hover:underline">Welcome</a></li>
-      <li><a href="#about" class="block hover:underline">About Me</a></li>
-      <li><a href="#achievements" class="block hover:underline">Achievements</a></li>
-      <li><a href="#goals" class="block hover:underline">Goals</a></li>
-      <li><a href="#contact" class="block hover:underline">Contact</a></li>
+ <header class="bg-blue-700 shadow-md p-4 text-white">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
+    <h1 class="text-xl font-bold">My Identity</h1>
+
+    <!-- Hamburger button with aria-label -->
+    <button id="menu-btn" class="md:hidden block focus:outline-none hover:text-blue-300" aria-label="Toggle Menu">
+      <!-- Improved SVG with stroke for better visibility -->
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+
+    <ul id="menu" class="hidden md:flex space-x-4 md:space-x-6">
+      <li><a href="#welcome" class="hover:underline">Welcome</a></li>
+      <li><a href="#about" class="hover:underline">About Me</a></li>
+      <li><a href="#achievements" class="hover:underline">Achievements</a></li>
+      <li><a href="#goals" class="hover:underline">Goals</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
     </ul>
-  </header>
+  </div>
+
+  <ul id="mobile-menu" class="md:hidden hidden mt-4 space-y-2 bg-blue-600 p-4 rounded-lg">
+    <li><a href="#welcome" class="block hover:underline">Welcome</a></li>
+    <li><a href="#about" class="block hover:underline">About Me</a></li>
+    <li><a href="#achievements" class="block hover:underline">Achievements</a></li>
+    <li><a href="#goals" class="block hover:underline">Goals</a></li>
+    <li><a href="#contact" class="block hover:underline">Contact</a></li>
+  </ul>
+</header>
+
 
   <!-- Welcome Section -->
   <section id="welcome" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-lg text-center relative overflow-hidden" data-aos="fade-in" style="min-height: 600px;">
