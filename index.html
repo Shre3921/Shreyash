@@ -222,3 +222,35 @@ fetch('personal.json')
   <script src="script.js"></script>
 </body>
 </html>
+<!-- Rest of your HTML -->
+
+  <!-- Vanta.js and Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Your other custom JS -->
+  <script src="script.js"></script>
+
+  <!-- Vanta Waves Initialization -->
+  <script>
+    window.onload = function () {
+      VANTA.WAVES({
+        el: "#welcome",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x0077be,
+        shininess: 50,
+        waveHeight: 20,
+        waveSpeed: 1.2,
+        zoom: 0.85
+    });
+    };
+  </script>
