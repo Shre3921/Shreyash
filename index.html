@@ -20,7 +20,7 @@
 
 <body class="bg-blue-50 text-blue-900 font-sans">
 
- <header class="bg-blue-700 shadow-md p-4 text-white">
+<header class="bg-blue-700 shadow-md p-4 text-white">
   <div class="max-w-6xl mx-auto flex justify-between items-center">
     <h1 class="text-xl font-bold">My Identity</h1>
 
@@ -28,30 +28,56 @@
     <button id="menu-btn" class="md:hidden block focus:outline-none hover:text-blue-300" aria-label="Toggle Menu">
       <!-- Improved SVG with stroke for better visibility -->
       <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <line x1="3" y1="6" x2="21" y2="6" />
         <line x1="3" y1="12" x2="21" y2="12" />
         <line x1="3" y1="18" x2="21" y2="18" />
       </svg>
     </button>
 
-    <ul id="menu" class="hidden md:flex space-x-4 md:space-x-6">
+    <!-- Desktop Menu -->
+    <ul id="menu" class="hidden md:flex space-x-4 md:space-x-6 items-center">
       <li><a href="#welcome" class="hover:underline">Welcome</a></li>
       <li><a href="#about" class="hover:underline">About Me</a></li>
       <li><a href="#achievements" class="hover:underline">Achievements</a></li>
       <li><a href="#goals" class="hover:underline">Goals</a></li>
       <li><a href="#contact" class="hover:underline">Contact</a></li>
+      <!-- Shopping Cart Icon -->
+      <li>
+        <a href="https://shre3921.github.io/Shopping/" aria-label="Shopping Cart" class="hover:text-blue-300">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l1.68 10.39a1 1 0 0 0 .99.81H19a1 1 0 0 0 .98-.8l1.2-6H6" />
+          </svg>
+        </a>
+      </li>
     </ul>
   </div>
 
+  <!-- Mobile Menu -->
   <ul id="mobile-menu" class="md:hidden hidden mt-4 space-y-2 bg-blue-600 p-4 rounded-lg">
     <li><a href="#welcome" class="block hover:underline">Welcome</a></li>
     <li><a href="#about" class="block hover:underline">About Me</a></li>
     <li><a href="#achievements" class="block hover:underline">Achievements</a></li>
     <li><a href="#goals" class="block hover:underline">Goals</a></li>
     <li><a href="#contact" class="block hover:underline">Contact</a></li>
+    <!-- Shopping Cart Icon -->
+    <li>
+      <a href="https://your-cart-url.com" class="flex items-center space-x-2 hover:text-blue-300" aria-label="Shopping Cart">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="9" cy="21" r="1" />
+          <circle cx="20" cy="21" r="1" />
+          <path d="M1 1h4l1.68 10.39a1 1 0 0 0 .99.81H19a1 1 0 0 0 .98-.8l1.2-6H6" />
+        </svg>
+        <span>Cart</span>
+      </a>
+    </li>
   </ul>
 </header>
+
 
 
   <!-- Welcome Section -->
